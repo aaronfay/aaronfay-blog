@@ -306,7 +306,7 @@ the list items to fix the size issue */
   -moz-border-radius-topright: 20px;
   border-top-right-radius: 20px;
   color: #000;
-  margin: -9px -9px 10px -20px;
+  margin: -11px -11px 10px -21px;
   padding: 9px 10px 8px 20px;
 }
 #sidebar .aside a, #sidebar .aside a:link, #sidebar .aside a:active {
