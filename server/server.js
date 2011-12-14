@@ -8,14 +8,16 @@ var Stack = require('stack'),
 	
 var child;
 
-// executes `pwd`
-child = exec("git pull", function (error, stdout, stderr) {
-  console.log('stdout: ' + stdout);
-  console.log('stderr: ' + stderr);
-  if (error !== null) {
-    console.log('exec error: ' + error);
-  }
-});
+setIntervile(function() {
+	// executes `pwd`
+	child = exec("git pull", function (error, stdout, stderr) {
+	  console.log('stdout: ' + stdout);
+	  console.log('stderr: ' + stderr);
+	  if (error !== null) {
+	    console.log('exec error: ' + error);
+	  }
+	});
+}, 1800000);
 
 Http.createServer(Stack(
   Creationix.log(),
