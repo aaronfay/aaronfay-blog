@@ -1,4 +1,4 @@
-Title: The making of my new blog
+Title: Building my blog, the choices I made in tech
 Author: Matt Apperson
 Date: Dec 14 2011
 
