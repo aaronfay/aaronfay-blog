@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0 10px;
   font-family: sans-serif;
-  background: #6c7994 url(volcano.jpg) top center no-repeat;
+  background: #fff;
 }
 #container {
   max-width: 1200px;
@@ -27,7 +27,6 @@ body {
   text-decoration: none;
 }
 #header H1 {
-  font-family: ArtBrushMedium, sans-serif;
   text-shadow: #fff 1px 1px 5px;
   font-weight: bold;
   font-size: 74px;
@@ -37,8 +36,7 @@ body {
   margin: 15px 30px 5px;
 }
 #header .tagline {
-  font-family: ArtBrushMedium, sans-serif;
-  color: #222;
+  color: #000;
   text-shadow: #fff 1px 1px 3px;
   margin: 5px 30px 20px;
   font-weight: bold;
