@@ -8,7 +8,7 @@ var Stack = require('stack'),
 	
 var child;
 
-setIntervile(function() {
+setInterval(function() {
 	// executes `pwd`
 	child = exec("git pull", function (error, stdout, stderr) {
 	  console.log('stdout: ' + stdout);
