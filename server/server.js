@@ -1,7 +1,21 @@
 // Just a basic server setup for this site
 var Stack = require('stack'),
     Creationix = require('creationix'),
-    Http = require('http');
+    Http = require('http'),
+    sys = require('sys'),
+	exec = require('child_process').exec;
+	
+	
+var child;
+
+// executes `pwd`
+child = exec("git pull", function (error, stdout, stderr) {
+  console.log('stdout: ' + stdout);
+  console.log('stderr: ' + stderr);
+  if (error !== null) {
+    console.log('exec error: ' + error);
+  }
+});
 
 Http.createServer(Stack(
   Creationix.log(),
