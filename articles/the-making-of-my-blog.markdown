@@ -4,7 +4,7 @@ Date: Dec 14 2011
 
 About 2 weeks ago, I decided to invest some time into re-developing my tools I use in my everyday work, and some things to help me expand my current tech toolset. So over the next few weeks I will be blogging about the new tech I am picking up in my everyday workflow. One of those things was my blog. 
 
-They say when you learn, one of the steps to learning it to teach what your learning. Also as I work as a Community Engineer at Appcelerator, I figure that its part of my "job" as it were to relay what I am learning to those in the community about not just Titanium Mobile, but also related tech linke node.js.
+They say when you learn, one of the steps to learning it to teach what your learning. Also as I work as a Community Engineer at Appcelerator, I figure that its part of my "job" as it were to relay what I am learning to those in the community about not just Titanium Mobile, but also related tech like node.js.
 
 So let's get to it then!
 
