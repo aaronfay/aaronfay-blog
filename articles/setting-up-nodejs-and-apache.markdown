@@ -66,6 +66,7 @@ Setting it up is easy, I placed mine in /var/www/html/route/ like so:
 - cd /var/www/html/route
 - npm install http-proxy
 - Upload my route handeling file: 
+
 <setting-up-nodejs-and-apache/server.js>
 
 You can alter those settings as needed for you sites...
