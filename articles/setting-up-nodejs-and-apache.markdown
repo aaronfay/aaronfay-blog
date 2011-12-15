@@ -13,7 +13,7 @@ Going back to the drawing board, I decided to head to the ever reliable [webhost
 
 So 5min after regestering, I had the login details in my inbox!
 
-## Seetting up
+## Setting up
 Now to the fun parts! I got to setup my shiny new server :) After the useal setting up of security, nothing fancy, I took to installing Node.JS... this was a mess I have to say... the instructions for a package setup were just flat out wrong, but that asside I got the job done... the method I used is as follows:
 
 - cd /usr/local/
@@ -41,7 +41,7 @@ Now to get the tool I now love more then any other... NVM, this tool will deal w
 
 These commands will install the latest stable release, and make that the default version... later you can easely use it to upgrade.
 
-## What about Apache / PHP
+## What about Apache / PHP?
 I wont go through the boring installing Apache and PHP setup... do that however you want... personaly I cheated and used yum.
 
 The interesting part comes into play now...
