@@ -20,4 +20,4 @@ Now that I had a language, I had to choose a storage method. I knew MySQL was ou
 
 In the end, its not a perfect solution for everyone, it's extreamly basic in features, but for me it was perfect! :)
 
-My blog on GitHub - [https://github.com/mattapperson/blog.mattapperson.com](https://github.com/mattapperson/blog.mattapperson.com) (a fork of [howtonode.com](howtonode.com) Thanks guys!)
+My blog on GitHub - [https://github.com/mattapperson/blog.mattapperson.com](https://github.com/mattapperson/blog.mattapperson.com) (a fork of [howtonode.com](http://howtonode.com) Thanks guys!)
