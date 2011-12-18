@@ -4,10 +4,8 @@
     %meta(http-equiv="content-type" content="text/html; charset=UTF-8")
     %title #{(title ? title + " - " : "")} Matt Apperson's Blog
     %meta(name="description" content="Tales of mobile and server side JS development")
-    %link(href="/volcano.css?v2" rel="stylesheet")
-    %link(href="/print.css" rel="stylesheet" media="print")
     %link(href="/bootstrap.css" rel="stylesheet")
-    %link(href="/bootstrap_edits.css" rel="stylesheet" media="print")
+    %link(href="/bootstrap_edits.css" rel="stylesheet")
     %link(rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml")
     %link(href="/favicon.ico" rel="icon" type="image/x-icon")
   %body
@@ -17,12 +15,11 @@
           %a{href: "http://mattapperson.com"}
             %img{src: "/logo.png", style:"float: left; margin-top: 8px" } 
           %ul.nav.secondary-nav
-            %li %a{href: "/"} Blog
+            %li.active %a{href: "/"} Blog
             %li %a{href: "http://twitter.com/#!/mattapperson", style:"padding-top:5px; padding-bottom:0px; padding-right:0px; padding-left:0px; margin:0px;"}
               %img{src: "/twitter_newbird_white.png" }
     
-    #container{style:"margin-top: 50px" } 
-      = content
+    .container = content
       
-      #footer.clearfix
-        %p This blog is running on node.js version v0.6.6    
+      %footer{style: "clear:both"}
+        %p &copy; Matt Apperson 2011 - This blog is running on node.js version v0.6.6    

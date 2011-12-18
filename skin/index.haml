@@ -1,17 +1,14 @@
-#main.clearfix
+.hero-unit{style: "width:650px; float:left"}
   :each article in articles.slice(0,15)
-    .article
-      .author
-        %img{src:gravitar(article.author.email, 30)}
-        By #{article.author.name}
-        .date{title: article.date}&= formatDate(article.date, "%Y.%m.%d")
+    .article.page-header{style: "padding-bottom:15px"}
       %h3{style: "margin-right: 150px"}
-        %a{href: "/" + article.name}&= article.title
+        %a{style: "color: #404040", href: "/" + article.name}&= article.title
+      .date{title: article.date}&= formatDate(article.date, "%A, %B %d, %Y")
       %p
         = intro(article.markdown)
       %a{href: "/" + article.name} Read more...
-
-#sidebar
+	
+.hero-unit{style: "width:230px; float: right"}
   .aside
     = markdownEncode(description)
   .bubble

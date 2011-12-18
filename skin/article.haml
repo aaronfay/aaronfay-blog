@@ -1,8 +1,11 @@
-#main.clearfix
+.hero-unit{style: "width:650px; float:left"}
   :if article.version
     %a.sha-version{ href: "/#{article.version}/#{article.name}" } Static Version
-  %h1
-    %a{href: "/" + article.name}&= article.title
+  %h1{style: "font-size:35px; margin-bottom:10px"}
+    %a{style: "color: #404040;", href: "/" + article.name}&= article.title
+  .date{title: article.date}&= formatDate(article.date, "%A, %B %d, %Y")
+  
+  %br
   = markdownEncode(article.markdown)
   %hr{style:"clear:both"}
   #disqus_thread.body
@@ -28,35 +31,7 @@
     })();
 
 
-#sidebar
-  .aside.clearfix
-    %h4 About the Author
-    %img.headshot{src: gravitar(author.email) }
-    %dl
-      %dt Name:
-      %dd&= author.name
-    :if author.github
-      %dl
-        %dt Github:
-        %dd= github(author.github)
-    :if author.bitbucket
-      %dl
-        %dt BitBucket:
-        %dd= bitbucket(author.bitbucket)
-    :if author.twitter
-      %dl
-        %dt Twitter:
-        %dd= twitter(author.twitter)
-    :if author.location
-      %dl
-        %dt Location:
-        %dd&= author.location
-    :if author.homepage
-      %dl
-        %dt Links:
-        %dd
-          %a{href: author.homepage} Homepage
-
+.hero-unit{style: "width:230px; float: right"}
   .bubble
     %h4
       About this Article
@@ -106,10 +81,10 @@
                 %a{ href: snippet.filename}
                   &= base
 
-  :if article.related && article.related.length > 0
-    .bubble
+:if article.related && article.related.length > 0
+  .hero-unit{style: "width:230px; float: right; margin-top:0px"}
       %h4
-        Other Articles by this Author
+        Other Articles
       %ul
         :each related in article.related
           %li
