@@ -17,4 +17,4 @@
     :each article in articles.slice(0,20)
       %li
         %a{href: "/" + article.name}&=article.title
-        &=" on " + formatDate(article.date, "%A, %B %d, %Y")
+        &=" on " + formatDate(article.date, "%m-%d-%Y")
