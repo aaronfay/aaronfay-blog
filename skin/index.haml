@@ -9,15 +9,14 @@
       %a{href: "/" + article.name} Read more...
 	
 .hero-unit{style: "width:230px; float: right"}
-  .aside
-    = markdownEncode(description)
-  .bubble
-    %h4
-      Articles
-    %ul
-      :each article in articles.slice(0,20)
-        %li
-          %a{href: "/" + article.name}&=article.title
-          &=" by " + article.author.name
-          :if article.node
-            %span.versiontag&= article.node
+  = markdownEncode(description)
+.hero-unit{style: "width:230px; float: right"}
+  %h4
+    Articles
+  %ul
+    :each article in articles.slice(0,20)
+      %li
+        %a{href: "/" + article.name}&=article.title
+        &=" by " + article.author.name
+        :if article.node
+          %span.versiontag&= article.node
