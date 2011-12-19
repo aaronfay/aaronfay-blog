@@ -8,7 +8,7 @@
     %link(href="http://cdn.mattapperson.com/bootstrap_edits.css" rel="stylesheet")
     %link(rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml")
     %link(href="/favicon.ico" rel="icon" type="image/x-icon")
-  %body{style: "background: url('bg.png') repeat-x"}
+  %body
     .topbar
       .fill
         .container
@@ -23,14 +23,3 @@
       
       %footer{style: "clear:both"}
         %p &copy; Matt Apperson 2011 - This blog is running on node.js version v0.6.6    
-  
-  :javascript
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-27810731-1']);
-    _gaq.push(['_setDomainName', 'mattapperson.com']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
