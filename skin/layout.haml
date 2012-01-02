@@ -13,16 +13,20 @@
       .fill
         .container
           %a{href: "http://mattapperson.com"}
-            %img{src: "http://cdn.mattapperson.com/images/logo.png", style:"float: left; margin-top: 8px" } 
+            %img{src: "http://cdn.mattapperson.com/images/logo.png", style:"float: left; margin-top: 8px" }
           %ul.nav.secondary-nav
             %li.active %a{href: "/"} Blog
             %li %a{href: "http://twitter.com/mattapperson", style:"padding-top:5px; padding-bottom:0px; padding-right:0px; padding-left:0px; margin:0px;"} %img{src: "http://cdn.mattapperson.com/images/twitter_newbird_white.png" }
-    
-    .container = content
-      
+
+    .container
+        %header.jumbotron.subhead#overview
+            %h1 Blog
+            %p.lead Bootstrap is built on a responsive 12-column grid. We've also included fixed- and fluid-width layouts based on that system.
+      content
+
       %footer{style: "clear:both"}
-        %p &copy; Matt Apperson 2011 - This blog is running on node.js version v0.6.6    
-  
+        %p &copy; Matt Apperson 2011 - This blog is running on node.js version v0.6.6
+
   :javascript
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27810731-1']);
