@@ -17,12 +17,14 @@ I am still a strong supporter of the platform and its community. In fact, I plan
 Titanium is a very cool product and I don't intend to bash it, but below is a list of its main advantages, and the deficiencies that have the potential to be improved:
 
 Pros:
+
 - it's easy to use, after overcoming the learning curve. The current documentation doesn't help - refer to the first item in my list of "Cons"
 - it uses JavaScript. I personally think JS is going to play a major roll in the dev world for the next few years
 - it is Open Source and extendible
 - it is faster to create cross-platform apps compared with developing them natively, and costs less to maintain due to a single codebase
 
 Cons:
+
 - poor APIDocs. However, I know a great deal of work is happening to improve this situation
 - certain aspects are a little too "magical" and, as such, make it difficult to hack/fix the core
 - Studio sucks! OK, this is obviously subjective; I just don't like eclipse
