@@ -1,6 +1,6 @@
 Title: Building my blog, the choices I made in tech
 Author: Matt Apperson
-Date: Dec 14 2011
+Date: Dec 14 2010
 
 About 2 weeks ago, I decided to invest some time into re-developing my tools I use in my everyday work, and some things to help me expand my current tech toolset. So over the next few weeks I will be blogging about the new tech I am picking up in my everyday workflow. One of those things was my blog. 
 

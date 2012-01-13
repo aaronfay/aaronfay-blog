@@ -1,6 +1,6 @@
 Title: Changing servers, and setting up PHP and NodeJS on a single box
 Author: Matt Apperson
-Date: Dec 15 2011
+Date: Dec 15 2010
 
 So now that we have discussed my new blog... That seemed like a logical place to start as I had this shiny new blog, and a ton of new readers. However for the sake of those of you following along to set up your own environment, let's jump back to the start of things... setting up the server. 
 
