@@ -1,6 +1,6 @@
 Title: MakeTi: The community make build script for titanium
 Author: Matt Apperson
-Date: Jan 16 2011
+Date: Jan 15 2011
 
 One of the things I never liked about Titanium Mobile was using Ti Studio... I don't use debugging, I don't like Eclipse, and for that matter, I was not a fan of Ti Desktop (it was better then studio, but still too clunky for my taste).
 
