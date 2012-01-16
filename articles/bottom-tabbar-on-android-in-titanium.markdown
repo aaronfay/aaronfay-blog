@@ -22,6 +22,7 @@ The XML you want to add [is found in this gist](https://gist.github.com/1621570)
 Then do a clean build of your app and run in android :)
 
 The result will look like this:
+
 ![bottom tabbar in titanium](bottom-tabbar/tabbar.png)
 
 It is just that simple! And no hacking of a fake tabbar to do it :)
