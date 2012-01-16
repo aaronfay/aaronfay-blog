@@ -31,7 +31,7 @@ So after patching up the things I did not like, and doing some code cleanup, I c
 
 ## Where things stand / Where it's going
 
-Currently MakeTi is a v1 release... I have MANY new features I am working on, and will be adding soon.
+Currently MakeTi is a v0.1 release... I have MANY new features I am working on, and will be adding soon.
 
 Some upcoming features are:
 - An integrated server, using nodejs so that the web SDK is more seamless to use.
