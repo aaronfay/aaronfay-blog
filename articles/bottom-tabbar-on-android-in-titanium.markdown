@@ -15,7 +15,7 @@ Knowing that will help you with a lot of more advanced topics in Titanium dev.
 
 ## On to the good stuff
 
-Place the following xml into a file named 'titanium_tabgroup.xml' (without the quotes), inside a new directory you will create called '%your apps project root%/platform/android/res/layout/'.
+Place the following xml into a file named 'titanium_tabgroup.xml' (without the quotes), inside a new directory you will create called '%your apps project root%/platform/android/res/layout/' (again, without the quotes).
 
 The XML you want to add [is found in this gist](https://gist.github.com/1621570)
 
