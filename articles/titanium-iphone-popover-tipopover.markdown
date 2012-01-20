@@ -4,7 +4,7 @@ Date: Jan 20 2012
 
 OK, so by popular demand I have created TiPopover!
 
-![TiPopover](http://t.co/aBf4DxD4)
+![TiPopover](http://a.yfrog.com/img808/7238/jq4.png)
 ## How-To
 
 In the gitub repo is an example app... from that you can see how it works :)
