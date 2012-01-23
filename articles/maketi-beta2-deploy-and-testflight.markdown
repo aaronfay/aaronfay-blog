@@ -14,6 +14,6 @@ make deploy testflight=true - Auto upload to testflight!
 
 ## PLEASE READ THE README ON GITHUB FOR A MORE ADVANCED HOW-TO!
 
-As always, to get the latest version of MakeTi, just download the latest from the GitHub repo - https://github.com/mattapperson/MakeTi
+As always, to get the latest version of MakeTi, just download the latest from the GitHub repo - [https://github.com/mattapperson/MakeTi](https://github.com/mattapperson/MakeTi)
 
 I hope you enjoy MakeTi Beta 2! Codestrong!
