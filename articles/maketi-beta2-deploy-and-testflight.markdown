@@ -1,4 +1,4 @@
-Title: MakeTi Beta 2: Now deply to device and directly to TestFlight!
+Title: MakeTi Beta 2: Now deploy to device and directly to TestFlight!
 Author: Matt Apperson
 Date: Jan 23 2012
 
