@@ -1,6 +1,6 @@
 Title: MakeTi Beta 2: Now deply to device and directly to TestFlight!
 Author: Matt Apperson
-Date: Jan 23 2011
+Date: Jan 23 2012
 
 So after having used MakeTi for a little bit, I decided a couple things were needed... first I was sick of opening Studio when I needed to get the app on my device, and secondly I use TestFlight a lot now and wanted to directly upload my apps.
 
