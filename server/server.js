@@ -2,7 +2,7 @@
 var Stack = require('stack'),
     Creationix = require('creationix'),
     Http = require('http'),
-    sys = require('sys'),
+    //sys = require('sys'),
 	exec = require('child_process').exec;
 	
 	
@@ -19,7 +19,9 @@ setInterval(function() {
 	});
 }, 1800000);
 
+//*
 Http.createServer(Stack(
   Creationix.log(),
   require('wheat')(process.env.JOYENT ? process.env.HOME + "/howtonode" : __dirname +"/..")
-)).listen(process.env.JOYENT ? 80 : 9090);
+)).listen(process.env.PORT, process.env.IP);
+//*/

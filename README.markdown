@@ -1,4 +1,4 @@
-# blog.mattapperson.com
+# TBD url
 
 This is a community supported blog about how to program in nodejs.
 
