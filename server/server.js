@@ -19,9 +19,7 @@ setInterval(function() {
 	});
 }, 1800000);
 
-//*
 Http.createServer(Stack(
   Creationix.log(),
-  require('wheat')(process.env.JOYENT ? process.env.HOME + "/howtonode" : __dirname +"/..")
+  require('wheat', {templateEngine: 'jade'})(process.env.JOYENT ? process.env.HOME + "/howtonode" : __dirname +"/..")
 )).listen(process.env.PORT, process.env.IP);
-//*/

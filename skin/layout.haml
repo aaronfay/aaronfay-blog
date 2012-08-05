@@ -2,30 +2,30 @@
 %html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
   %head
     %meta(http-equiv="content-type" content="text/html; charset=UTF-8")
-    %title #{(title ? title + " - " : "")} Matt Apperson's Blog
+    %title #{(title ? title + " - " : "")} Aaron Fay's Blog
     %meta(name="description" content="Tales of mobile and server side JS development")
-    %link(href="http://cdn.mattapperson.com/bootstrap.css" rel="stylesheet")
-    %link(href="http://cdn.mattapperson.com/bootstrap_edits.css" rel="stylesheet")
+    %link(href="bootstrap.css" rel="stylesheet")
+    %link(href="bootstrap_edits.css" rel="stylesheet")
     %link(rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml")
     %link(href="/favicon.ico" rel="icon" type="image/x-icon")
   %body{style: "background: url('bg.png') repeat-x"}
     .topbar
       .fill
         .container
-          %a{href: "http://mattapperson.com"}
-            %img{src: "http://cdn.mattapperson.com/images/logo.png", style:"float: left; margin-top: 8px" }
+          %a{href: "/"}
+            %img{src: "logo.png", style:"float: left; margin-top: 8px" }
           %ul.nav.secondary-nav
             %li.active %a{href: "/"} Blog
-            %li %a{href: "http://twitter.com/mattapperson", style:"padding-top:5px; padding-bottom:0px; padding-right:0px; padding-left:0px; margin:0px;"} %img{src: "http://cdn.mattapperson.com/images/twitter_newbird_white.png" }
+            %li %a{href: "http://twitter.com/aaronfay", style:"padding-top:5px; padding-bottom:0px; padding-right:0px; padding-left:0px; margin:0px;"} %img{src: "http://cdn.mattapperson.com/images/twitter_newbird_white.png" }
 
     .container = content
 
       %footer{style: "clear:both"}
-        %p &copy; Matt Apperson 2011 - This blog is running on node.js version v0.6.6
+        %p &copy; Aaron Fay 2012 - This blog is running on node.js version v0.8.2
 
   :javascript
     var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-27810731-1']);
+    _gaq.push(['_setAccount', '--noop--']);
     _gaq.push(['_setDomainName', 'mattapperson.com']);
     _gaq.push(['_trackPageview']);
     (function() {
