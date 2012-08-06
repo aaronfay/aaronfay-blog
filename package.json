@@ -18,7 +18,7 @@
     "wheat": ">=0.2.0",
     "cluster": ">=0.6.4",
     "express": "~3.0.0",
-    "node-git": "git@github.com:aaronfay/node-git.git#master"
+    "git-fs": "git@github.com:aaronfay/node-git.git#master"
   },
   "devDependencies": {}
 }
