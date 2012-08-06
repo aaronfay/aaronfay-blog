@@ -19,26 +19,8 @@ setInterval(function() {
   });
 }, 1800000);
 
-var init = exec("git init", function (error, stdout, stderr) {
-  if (error !== null) {
-    console.log('git init error: ' + error);
-  } else {
-    // now pull the repo
-    var pull = exec("git pull https://github.com/aaronfay/aaronfay-blog.git", function (error, stdout, stderr) {
-      if (error) {
-        console.warn('error: ' + stderr)
-      }
-      console.log(stdout)
-      console.log('pulled .git repo');
-      runServer();
-    });
-  }
-});
-
-function runServer() {
-  Http.createServer(Stack(
-    Creationix.log(),
-    require('wheat')(process.env.JOYENT ? process.env.HOME + "/howtonode" : __dirname +"/..")
-  )).listen(process.env.PORT || 5000);
-}
+Http.createServer(Stack(
+  Creationix.log(),
+  require('wheat')(process.env.JOYENT ? process.env.HOME + "/howtonode" : __dirname +"/..")
+)).listen(process.env.PORT || 5000);
 
