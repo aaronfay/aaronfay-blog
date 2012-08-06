@@ -21,5 +21,6 @@ setInterval(function() {
 
 Http.createServer(Stack(
   Creationix.log(),
-  require('wheat', {templateEngine: 'jade'})(process.env.JOYENT ? process.env.HOME + "/howtonode" : __dirname +"/..")
+  require('wheat')(process.env.JOYENT ? process.env.HOME + "/howtonode" : __dirname +"/..")
 )).listen(5000);
+
