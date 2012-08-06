@@ -9,7 +9,8 @@
     "url": "git://github.com/creationix/howtonode.org.git"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": "0.8.x",
+    "npm":  "1.1.x"
   },
   "dependencies": {
     "stack": ">=0.0.3",
