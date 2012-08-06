@@ -15,10 +15,9 @@
   "dependencies": {
     "stack": ">=0.0.3",
     "creationix": ">=0.1.2",
-    "wheat": ">=0.2.0",
+    "wheat": "https://github.com/aaronfay/wheat/tarball/master",
     "cluster": ">=0.6.4",
-    "express": "~3.0.0",
-    "git-fs": "https://github.com/aaronfay/node-git/tarball/master"
+    "express": "~3.0.0"
   },
   "devDependencies": {}
 }
