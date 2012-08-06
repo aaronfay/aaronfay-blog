@@ -25,6 +25,10 @@ var init = exec("git init", function (error, stdout, stderr) {
   } else {
     // now pull the repo
     var pull = exec("git pull https://github.com/aaronfay/aaronfay-blog.git", function (error, stdout, stderr) {
+      if (error) {
+        console.warn('error: ' + stderr)
+      }
+      console.log(stdout)
       console.log('pulled .git repo');
       runServer();
     });
