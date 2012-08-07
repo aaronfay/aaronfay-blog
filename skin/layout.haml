@@ -3,7 +3,7 @@
   %head
     %meta(http-equiv="content-type" content="text/html; charset=UTF-8")
     %title #{(title ? title + " - " : "")} Aaron Fay's Blog
-    %meta(name="description" content="Tales of mobile and server side JS development")
+    %meta(name="description" content="Javascript and Python development")
     %link(href="bootstrap.css" rel="stylesheet")
     %link(href="bootstrap_edits.css" rel="stylesheet")
     %link(rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed.xml")
@@ -16,7 +16,7 @@
             %img{src: "logo.png", style:"float: left; margin-top: 8px" }
           %ul.nav.secondary-nav
             %li.active %a{href: "/"} Blog
-            %li %a{href: "http://twitter.com/aaronfay", style:"padding-top:5px; padding-bottom:0px; padding-right:0px; padding-left:0px; margin:0px;"} %img{src: "http://cdn.mattapperson.com/images/twitter_newbird_white.png" }
+            %li %a{href: "http://twitter.com/aaronfay", style:"padding-top:5px; padding-bottom:0px; padding-right:0px; padding-left:0px; margin:0px;"} %img{src: "/twitter_newbird_white.png" }
 
     .container = content
 
@@ -25,8 +25,8 @@
 
   :javascript
     var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '--noop--']);
-    _gaq.push(['_setDomainName', 'mattapperson.com']);
+    _gaq.push(['_setAccount', 'UA-2116067-23']);
+    _gaq.push(['_setDomainName', 'blog.aaronfay.ca']);
     _gaq.push(['_trackPageview']);
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
