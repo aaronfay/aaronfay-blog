@@ -52,7 +52,7 @@ In the `setup.py` you only need specify the tarball location in a specific way i
 
 Eg: 
 
-```python
+```
 
 from setuptools import setup
 
