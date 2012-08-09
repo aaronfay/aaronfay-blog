@@ -52,32 +52,31 @@ In the `setup.py` you only need specify the tarball location in a specific way i
 
 Eg: 
 
-```
 
-from setuptools import setup
+    from setuptools import setup
 
-...
+    ...
 
-setup(
-    name = "my-project",
-    version = "1.0.0",
-    author = "Aaron Fay",
-    author_email = "me@gmail.com",
-    description = ("Simple python setuptools package."),
-    license = "BSD",
-    keywords = "example python package setuptools",
-    url = "http://my.url",
-    packages = ['an_example_pypi_project',],
-    long_description = "My description"
-    install_requires = [
-        'my_other_package==1.0.0' ## look here!
-    ],
-    dependency_links = [
-        'https://github.com/AaronFay/my-other-package/tarball/master#egg=my_other_package-1.0.0'
-    ]
-)
+    setup(
+        name = "my-project",
+        version = "1.0.0",
+        author = "Aaron Fay",
+        author_email = "me@gmail.com",
+        description = ("Simple python setuptools package."),
+        license = "BSD",
+        keywords = "example python package setuptools",
+        url = "http://my.url",
+        packages = ['an_example_pypi_project',],
+        long_description = "My description"
+        install_requires = [
+            'my_other_package==1.0.0' ## look here!
+        ],
+        dependency_links = [
+            'https://github.com/AaronFay/my-other-package/tarball/master#egg=my_other_package-1.0.0'
+        ]
+    )
 
-```
+
 The trick in all this is the `#egg=my_other_package-1.0.0` part, setuptools will recognize the package name and match it up with a required package in `install_requires`.  It even has a pretty smart way to [differentiate package versions](http://packages.python.org/distribute/setuptools.html#specifying-your-project-s-version).
 
 ### wrapping up
