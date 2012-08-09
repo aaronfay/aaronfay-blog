@@ -1,4 +1,4 @@
-Title: Github, Setuptools, and What I Leared Today
+Title: Github, Setuptools, and What I Learned Today
 Author: Aaron Fay
 Date: Aug 8 2012
 
