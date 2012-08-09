@@ -48,6 +48,7 @@ want, which might be any given thing.  So, here's another shot at all that.
 The [heroku][] toolkit is awesome, deployment was a snap, I was really starting to like it, 
 but, in the end, it wouldn't work.  *The reason is* that the `.git` folder doesn't end up
 on the heroku deployment, and [wheat][] needs the `.git` folder intact to run properly.  
+
 I tried several workarounds, pulling the repo just before running the server, but it
 still didn't work out properly. So, in the end, I just deployed to [AWS][], again :)
 
