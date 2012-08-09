@@ -33,7 +33,7 @@ One of the neat things about settling in with a new development team is the thin
  * the things I've been doing right,
  * the things I've been doing wrong.
 
- Of the latter, the first that comes to mind is [setuptools][]. I've been managing Python dependencies manually for the last several years, in my mind, somehow, convinced that efficient dependency management in Python was somehow flawed, or "seldom agreed upon".  Probably a result of me being in a hurry most of the time.
+Of the latter, the first that comes to mind is [setuptools][]. I've been managing Python dependencies manually for the last several years, in my mind, somehow, convinced that efficient dependency management in Python was somehow flawed, or "seldom agreed upon".  Probably a result of me being in a hurry most of the time.
 
 Thankfully, I've seen the light!  A colleague at work turned me back on to [virtualenv][], and I now realize what I've been missing in python all along: __a reliable, simple deployment strategy__.  I'll have to write more on that workflow later.
 
