@@ -4,7 +4,7 @@ Date: Aug 8 2012
 
 How's that for a title?  I just have to say, [git][] is pretty awesome, but I'm assuming you knew that.  I read an article today where (for the first time I've seen) someone was making a case for [bazaar][] over git.  I used [bazaar][] for our development team for almost two years, it was my "upgrade" to "distributed" over subversion. Sorry, can't find the article. In a nutshell, 20 out of dvcs users [on that webpage] prefer git over bzr.  Maybe corn flakes too...
 
-## tldr;
+### tldr;
 Click the little 'X' in the upper-right corner...
 
 ## good, bad, indifferent
