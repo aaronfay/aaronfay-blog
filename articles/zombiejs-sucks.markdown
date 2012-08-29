@@ -28,19 +28,19 @@ didn't help any either.
 I'm not one to give up, I rarely let a hard problem get by me, but this isn't 
 just a 'tricky' API I think.  I think it's an immature project.  Harsh, I know, 
 but have a look at this example:
-```
-var zombie = require('zombie')
-  , browser = new zombie.Browser
-  ;
 
-browser.load('<html />', function () {
-  console.log('foo')
-});
-```
+    var zombie = require('zombie')
+      , browser = new zombie.Browser
+      ;
+    
+    browser.load('<html />', function () {
+      console.log('foo')
+    });
+
 
 According to the [documentation][], `browser.load`...
 
-    Loads this HTML, processes events and calls the callback.
+> Loads this HTML, processes events and calls the callback.
 
 But it actually gives: 
 
