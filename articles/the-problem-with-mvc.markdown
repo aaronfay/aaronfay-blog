@@ -43,40 +43,19 @@ Sanity because and MVC or similar (MVVM, MVCS, MV*) pattern helps you separate y
 > __*Data state representation bindings.*__
 > 
 
-That's what MVC really is: some representation of the state of a piece of data.  The 'bindings' part means that if the data state changes (meaning the data changes period), then anything bound to that data (the views) updates accordingly.  
+Let me clarify that: __bindings that automatically change the interface to represent the state of the data__.  This means (in the case of a browser
+or something similar) that when you click an item, you don't reach in with your code and change the page or another element on 
+the page, you change your data instead.  And if you have your bindings set up properly (or your framework for that matter), then 
+the view updates for you.  With this kind of setup you can wire as many views to a single piece of data as you want, and in order
+to update them all, you only need change the state of the data, and they will all automatically update.
 
-Let's take the browser, for instance.  Every one of us has built an application that did exactly this:
+See? _Sanity_.  
 
- * User clicks a button to add a new item to a list
- * `click` handler grabs some text/value from the text input and appends the new list item
- * Once the new list item is in place, count how many `<li>`s are in the '<ul>'
- * Put that count in another part of the page `<span id="total-items"></span>`
+### Time to grow up...
+If you're not using some MV -ish framework or some kind of bindings for your project, there will never be a better
+time than now.  You owe yourself a little sanity, take the plunge.  You'll thank yourself in the end.
 
-In this example, we have basically one click handler and callback, pretty simple:
-
-    // register the click handler
-    $('#my-button').click(function () {
-      var val = $('#my-input').val();
-      var newLI = $('<li/>');
-      newLI.text(val);
-      $('#my-list').append(newLI);
-      var count = $("#my-list > li").size();
-      $('#totals').text(count);
-    });
-
-If that were all you ever had to do, then that's fine, app's done, go home.  But that's not really a 
-web app, is it.  Let's say you need a new feature: remove an item from the list by clicking on it.
-
-Now there's another click handler:
-
-    // register listener for removing item
-    $('#my-list > li').click(function () {
-      
-    });
-
-This also means that you need to think about how 
-
-
+_af_
 
 
 [1]: http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
