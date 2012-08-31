@@ -1,6 +1,6 @@
 Title: The problem with MVC
 Author: Aaron Fay
-Date: Aug 12 2012
+Date: Aug 30 2012
 
 I'm a modern-day hack: I read a bit, books and online, I mash together chunks of code and frameworks to try and make things work (or break), I like to try things that few have attempted, with pretty decent success.  For the longest time I didn't feel entirely comfortable in my shoes as a "programmer", meaning that I was writing code, my shit was working, but I felt I never met the generally-accepted criteria of a modern programmer.  One of the things that kept me feeling unworthy was my lack of the use of teh ["MVC"][1] in my works.
 
