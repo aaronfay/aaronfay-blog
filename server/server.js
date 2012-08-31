@@ -8,6 +8,7 @@ var Stack = require('stack'),
   
 var child;
 
+/*
 setInterval(function() {
   // executes `pwd`
   child = exec("git pull", function (error, stdout, stderr) {
@@ -18,9 +19,15 @@ setInterval(function() {
     }
   });
 }, 1800000);
+*/
+
+// compatibility with c9
+var port = process.env.PORT || 80;
+var ip = process.env.IP || '127.0.0.1';
+
 
 Http.createServer(Stack(
   Creationix.log(),
   require('wheat')(process.env.JOYENT ? process.env.HOME + "/howtonode" : __dirname +"/..")
-)).listen(80);
+)).listen(port, ip);
 
