@@ -50,3 +50,4 @@ Af
 [PySFTP]: http://code.google.com/p/pysftp/
 [this post]: http://stackoverflow.com/questions/8932862/how-do-i-change-directories-using-paramiko
 [teh Stack]: http://stackoverflow.com/
+[paramiko]: http://www.lag.net/paramiko/
