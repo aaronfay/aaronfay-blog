@@ -55,7 +55,9 @@ that page, each measurement is going to cost you $0.000002 per measurement.
 
 I did the math, for the ~180 measurements we run at work every 90 seconds, it would
 cost us about $12/month to use their service (compared to ~$300/month on Datadog 
-for 20 hosts).
+for 20 hosts).  The flip side to that is, Datadog has a whole bunch of 1-click 
+integration scripts to get up and running, while Librato is still a bit of a 
+WIP in that area.  No skin to me.
 
 [Librato Metrics]: https://metrics.librato.com/
 [api]: http://dev.librato.com/v1/metrics#metrics
@@ -123,6 +125,11 @@ Here's my node script to push data to Librato, it uses [node-librato-metrics][] 
 It basically takes an OS measurement on CPU and calculates free memory every 90 seconds.
 Then it pushes that information to librato, and carries on.  Since it's node, the whole 
 operation happens asynchronously and everybody's happy.
+
+### HipChat
+Did I mention they have 1-click "send this snapshot to [HipChat][]" also?  That's just fun.
+
+[HipChat]: http://www.hipchat.com/
 
 ## Happy happy!
 
