@@ -23,7 +23,7 @@ For a bit of code that I'm working on, I need a little more complicated search t
 
     $search_string = 'bar';
     $match = grep {/$search_string/} keys %foo;
-    print $match; // prints '1'
+    print $match; # prints '1'
     
 Pretty straight forward.  This example doesn't really give a lot of power just yet, mostly because the regular expressions are over-simplified.  It was in my next example that the nature of `list` and `scalar` context started to become clear to me in Perl.  According to [this page on the perldoc site](http://perldoc.perl.org/functions/grep.html), "[grep] returns the list value consisting of those elements for which the expression evaluated to true. In scalar context, returns the number of times the expression was true."
 
