@@ -98,4 +98,4 @@ Here are a few suggested exit points...
 Aaron
 
 _Edit_: I just ran across this blog post by [Jeff Atwood](https://www.google.ca/search?q=jeff+atwood&sugexp=chrome,mod=13&sourceid=chrome&ie=UTF-8) 
-that validated my entire train of though, [link](http://www.codinghorror.com/blog/2007/06/learning-or-learning-how-to-learn.html).
+that validated my entire train of thought, [link](http://www.codinghorror.com/blog/2007/06/learning-or-learning-how-to-learn.html).
