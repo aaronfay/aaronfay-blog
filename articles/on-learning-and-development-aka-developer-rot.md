@@ -46,9 +46,11 @@ integration needs design, there are shiny new requirements for the project, and 
 the reality of the entire evolution of my software career.
 
 ## The real problem
-"What problem does <insert new thing here> solve that I can do in <insert my language/framework here>?"
+*"What problem does &lt;insert new thing here&gt; solve that I can do in &lt;insert my language/framework here&gt;?"*
 
-**Time.** If you spend (to pick a number) 20 hours to build a project using your current tools, and the new tool 
+**The problem of time.** 
+
+If you spend (to pick a number) 20 hours to build a project using your current tools, and the new tool 
 promises to cut your time in half, you have 10 hours now to learn that new tool. The gain beyond that becomes several-
 fold: 
 
@@ -64,13 +66,13 @@ You are also going to save that much time again on your next project, and you're
 huge motivator, in fact, I would argue it's the _only real_ motivator.
 
 ## The time is now
-If you are saying, "those tools look nice, but I don't have the time to learn them..." then you are already suffering 
+If you are saying, *"those tools look nice, but I don't have the time to learn them..."* then you are already suffering 
 from this condition. You will need to adopt and learn the tools as you encounter them, when they promise to solve your
 problems faster and better. And you need to continue to adopt. If you can solve a problem well in one language, you 
 can solve it well in any language. If you can properly implement a project in one stack, you can implement it in any
 stack. 
 
-"But I'll have 50 projects in 50 different software stacks..." look at the internet: is it all written in Java? Can you
+*"But I'll have 50 projects in 50 different software stacks..."* Look at the internet: is it all written in Java? Can you
 even tell most of the time? Use [good conventions](http://www.12factor.net/) to guide you and then dive in.
 
 Here are a few suggested exit points...
