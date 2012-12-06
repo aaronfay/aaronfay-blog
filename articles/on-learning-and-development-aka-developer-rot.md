@@ -42,7 +42,8 @@ tools work, but the environment is not the same. 12-month objectives are no long
 acceptible amount of time to put into a software project. Because we are learning creatures, and we do improve over
 time, we want to think we can write it faster and better this time around, and we really can! But the timeline for 
 development within a given framework or toolchain is going to be fairly fixed. Boilerplate exists, component 
-integration needs design, there are shiny new requirements for the project.
+integration needs design, there are shiny new requirements for the project, and now your timeline is shorter. This is
+the reality of the entire evolution of my software career.
 
 ## The real problem
 "What problem does <insert new thing here> solve that I can do in <insert my language/framework here>?"
@@ -80,9 +81,11 @@ Here are a few suggested exit points...
  * [http://mojolicio.us/](http://mojolicio.us/)
  * [https://github.com/substack/dnode](https://github.com/substack/dnode)
  * [http://git-scm.com/](http://git-scm.com/)
-
+ * [http://djangoproject.com/](http://djangoproject.com/)
+ * [http://flask.pocoo.org/](http://flask.pocoo.org/)
+ * [http://nevir.github.com/groc/](http://nevir.github.com/groc/)
+ * [http://phantomjs.org/](http://phantomjs.org/)
+ * [http://pivotal.github.com/jasmine/](http://pivotal.github.com/jasmine/)
 
 #### Good luck
 Aaron
-
-And now 
