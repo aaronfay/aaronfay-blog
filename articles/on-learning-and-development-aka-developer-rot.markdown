@@ -75,6 +75,11 @@ stack.
 *"But I'll have 50 projects in 50 different software stacks..."* Look at the internet: is it all written in Java? Can you
 even tell most of the time? Use [good conventions](http://www.12factor.net/) to guide you and then dive in.
 
+## Netucation
+"Real school" is starting to not mean much anymore. The new school is the internet. And the internet is changing. Every.
+Single. Day. Knowing a couple languages isn't going to get you very far any more. Your best friend in the new web is
+the _ability to learn_. Don't fight change, embrace it...
+
 Here are a few suggested exit points...
 
  * [http://nodejs.org/](http://nodejs.org)
