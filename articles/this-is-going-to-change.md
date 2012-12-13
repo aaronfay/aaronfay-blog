@@ -10,3 +10,6 @@ Your setup is going to change, program like that's the only thing that will rema
 
 Testing is not about finding bugs. It's not even really about making sure a piece of code works, you could do that yourself. Testing is to make sure *you can change it*.
 
+### On projects
+When you set up a project, if you have no built-in or prescribed way of specifying the dependencies of the project, you're going to find yourself pulling your hair out down the road. You **are** going to have to wipe it out and start from scratch at one point, or even if you don't, you still need to replicate the setup for stage, and production, and another developer. Save yourself some trouble, use the package management system or your language, or the one prescribed by the community.  [Setuptools](#) for Python, [npm](#) for node, [gem](#) for ruby. Manage your own packages with these. It will save you mondo time down the road. If your language doesn't have package management, bail, find a language that does.
+
