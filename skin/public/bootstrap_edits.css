@@ -47,6 +47,9 @@
   line-height: 1;
   letter-spacing: -1px;
 }
+.hero-unit h2 {
+  line-height: 60px;
+}
 .hero-unit p {
   font-size: 15px;
   font-weight: 200;
@@ -131,4 +134,8 @@ footer {
   -moz-border-radius: 6px;
   border-radius: 6px;
   padding: 10px;
+}
+
+p {
+ margin-bottom: 20px;
 }
