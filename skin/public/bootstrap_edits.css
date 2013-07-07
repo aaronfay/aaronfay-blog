@@ -139,3 +139,10 @@ footer {
 p {
  margin-bottom: 20px;
 }
+
+li {
+  line-height: 19px;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 5px;
+}
