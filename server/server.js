@@ -23,7 +23,10 @@ setInterval(function() {
 
 // compatibility with c9
 var port = process.env.PORT || 80;
-var ip = process.env.IP || '127.0.0.1';
+var ip = process.env.IP || '0.0.0.0';
+
+console.log(port)
+console.log(ip)
 
 
 Http.createServer(Stack(
