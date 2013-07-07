@@ -66,6 +66,17 @@
                 %a{ href: "http://github.com/creationix/haml-js/tree/8ea2df3a90ff488ed253d5872e0f4a387f393e5d" }
                   haml-js v0.2.2
 
+    :if article.categories
+      %dl
+        %dt
+          Categories
+        %dd
+          %ul
+            :each category in article.categories
+              %li
+                %a{href: '/category/' + category}&=category
+
+
     :if article.uniqueSnippets
       %dl
         %dt
