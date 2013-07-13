@@ -2,11 +2,9 @@ Title: setuptools, pip, and custom python index
 Author: Aaron Fay
 Date: Jul 13 2013
 
-Background
-===
 In modern-day software development for the web I find that we end up trying many different ways to deploy code. While [at work](http://strathcom.com/) we're using python as our primary programming language, I've enjoyed the [node.js philosophy][1], especially the practice of [Small Kernels of Functionality][1] and [Loosely Coupled Components][1]. 
 
-From [the article]:
+From [the article][5]:
 
  > "...why package two modules together if you can simply break them apart into two kernels of functionality which are codependent?""
 
@@ -25,7 +23,7 @@ The problem with is many-fold though:
 Back to the [node.js philosophy][1], if you've ever used [npm][2] before, you know that there are [tons and tons of modules][3] available for node (as an interesting sidenode, npmjs module counts are growing by 94 modules/day at the time of writing [link][3])http://substack.net/how_I_write_modules. The recommended approach is to keep modules small, and publish them independently so they can be used explicitly across applications. [James Halliday (substack) writes about this approach on his blog][4].
 
 Back to Python
-===
+---
 [Python has been criticized for having painful package management][7]. At work, we currently use [setuptools][8] for installing packages from [Github][9], and it does a pretty decent job. [As I've written before][10] you can specify `dependency_links` in the `setup.py` file to pull tarballs from any source control system that will provide them. Like I said, this works pretty well.
 
 Mypi
@@ -72,6 +70,7 @@ Hope that helps someone else down the road. Now we have a nice private registry 
 [2]: http://npmjs.org
 [3]: http://modulecounts.com/
 [4]: http://substack.net/how_I_write_modules
+[5]: http://blog.nodejitsu.com/the-nodejs-philosophy
 [6]: http://en.wikipedia.org/wiki/Single_responsibility_principle
 [7]: http://www.simplistix.co.uk/presentations/python_package_management_08/python_package_management_08.pdf
 [8]: https://pythonhosted.org/setuptools/index.html
