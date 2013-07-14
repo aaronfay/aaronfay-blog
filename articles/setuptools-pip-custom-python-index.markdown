@@ -49,11 +49,12 @@ Turns out [pip][15] spits out the setuptools configuration (whatever you have in
 
 To get the [pip][15] equivalent of `python setup.py develop` just run:
  
-    pip install -e .
+    # -e means 'edit'
+    $ pip install -e .
 
 To get the same for `python setup.py install` run:
 
-    pip install .
+    $ pip install .
 
 ### Done and done.
 
