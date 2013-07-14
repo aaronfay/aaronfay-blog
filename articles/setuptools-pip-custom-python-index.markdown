@@ -10,7 +10,7 @@ From [the article][5]:
 
 Problem
 ---
-One of the core sore points for me right now is the existence of "common" libraries in our work. It's common to have a piece of code that is needed in the current project, but doesn't particularly belong there. The approach (I often see) is to create said "common" library and deploy that with all of the projects that need the code.
+One of the core sore points for me right now is the existence of "common" libraries in our work. It's common to have a piece of code that is needed in the current project, but doesn't particularly belong there. The approach (I often see) is to create said "common" library and deploy that with all of the projects that need the code. The major resistance to putting this in an individual package is probably the overhead of maintaining a separate repository for the individual code, along with the pull/commit/push/tag/release cycle that comes with it to make changes to a potentially developing module. So in the end, we end up with the "common" library.
 
 The problem with is many-fold though:
 
@@ -56,7 +56,8 @@ To get the same for `python setup.py install` run:
 
     $ pip install .
 
-### Done and done.
+### Done and done
+I think this solution will solve some of the problem of having all the git/Github overhead involved in releases. With a simple `fab` setup, release candidates and formal releases can be incremented and deployed in a way that feels a little more clean and independent of the git workflow, while still maintaining source control. I'm hoping it will promote users to push modules early in a 'sharable' way to the private index so they can be easily installed for others. All in all, it feels cleaner to do it this way for me.
 
 Hope that helps someone else down the road. Now we have a nice private registry for our python packages, and an easy way to automate their installation.
 
