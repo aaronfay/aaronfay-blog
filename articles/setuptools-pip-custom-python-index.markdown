@@ -56,6 +56,8 @@ To get the same for `python setup.py install` run:
 
     $ pip install .
 
+ **The super-cool thing about this is** that `dependency_links` no longer need to be set in the `setup.py` files as [pip][15] will use the custom index set up in the `~/.pip/pip.conf` file.
+
 ### Done and done
 I think this solution will solve some of the problem of having all the git/Github overhead involved in releases. With a simple `fab` setup, release candidates and formal releases can be incremented and deployed in a way that feels a little more clean and independent of the git workflow, while still maintaining source control. I'm hoping it will promote users to push modules early in a 'sharable' way to the private index so they can be easily installed for others. All in all, it feels cleaner to do it this way for me.
 
