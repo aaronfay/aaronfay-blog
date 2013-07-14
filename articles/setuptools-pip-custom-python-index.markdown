@@ -20,7 +20,7 @@ The problem with is many-fold though:
  * it's not clear later on how to break things out because it's not clear what projects are using what parts of the library,
  * the library with all theses different pieces of functionality [breaks the rule of single responsibility][6].
 
-Back to the [node.js philosophy][1], if you've ever used [npm][2] before, you know that there are [tons and tons of modules][3] available for node (as an interesting sidenode, npmjs module counts are growing by 94 modules/day at the time of writing [link][3])http://substack.net/how_I_write_modules. The recommended approach is to keep modules small, and publish them independently so they can be used explicitly across applications. [James Halliday (substack) writes about this approach on his blog][4].
+Back to the [node.js philosophy][1], if you've ever used [npm][2] before, you know that there are [tons and tons of modules][3] available for node (as an interesting sidenode, npmjs module counts are growing by 94 modules/day at the time of writing [[link][3]]). The recommended approach is to keep modules small, and publish them independently so they can be used explicitly across applications. [James Halliday writes about this approach on his blog][4].
 
 Back to Python
 ---
@@ -28,7 +28,7 @@ Back to Python
 
 Mypi
 ---
-I've also recently set up a [mypi][11] private package index for our work, so we can start moving towards small, reusable python packages. I've also looked at [djangopypi][12] and [djangopypi2][13], the latter being a [bootstrap][14]-converted fork of the former. Both these projects seem to add a little more functionality around users management, and of course they're built on [Django][14], which means you get the nice Django admin at the same time. I haven't had time to do a full comparison, that will have to come later. For the time being, [mypi] seems to do the trick nicely.
+I've also recently set up a [mypi][11] private package index for our work, so we can start moving towards small, reusable python packages. I've also looked at [djangopypi][12] and [djangopypi2][13], the latter being a [bootstrap][14]-converted fork of the former. Both these projects seem to add a little more functionality around users management, and of course they're built on [Django][14], which means you get the nice Django admin at the same time. I haven't had time to do a full comparison, that will have to come later. For the time being, [mypi][11] seems to do the trick nicely.
 
 Where setuptools falls apart
 ---
@@ -36,7 +36,7 @@ Turns out, using [pip][15], you can just [specify a custom index][16] in your `~
 
 Setuptools fail
 ---
-My scenario had 2 projects, *Project A* and *Project B*. *Project A* relies on custom packages in my [mypi][11] index, and is published to the package also. *Project B* has a single dependency on *Project A*. Using [setuptools][8] `python setup.py install` would find *Project A* in the private package index (via `dependency_links`), but none of *Project A*'s custom index dependencies were being found, despite having specified the `dependency_links` in that project.
+My scenario had 2 projects, **Project A** and **Project B**. **Project A** relies on custom packages in my [mypi][11] index, and is published to the package also. **Project B** has a single dependency on **Project A**. Using [setuptools][8] `python setup.py install` would find **Project A** in the private package index (via `dependency_links`), but none of *Project A*'s custom index dependencies were being found, despite having specified the `dependency_links` in that project.
 
 Long story longer (and the answer)
 ---
@@ -44,20 +44,16 @@ The answer just turned out to be a little bit more understanding of the evolutio
 
 > Internally, pip uses the setuptools package, and the pkg_resources module, which are available from the project, Setuptools.
 
-Turns out [pip][15] spits out the setuptools configuration (whatever you have in your `setup.py`) into a `<project-name>.egg-info` folder, *including* `dependency_links`. 
+Turns out [pip][15] spits out the setuptools configuration (whatever you have in your `setup.py`) into a `/<project-name>.egg-info/` folder, *including* `dependency_links`. 
 
 
-To get `python setup.py develop` just run:
+To get the [pip][15] equivalent of `python setup.py develop` just run:
+ 
+    pip install -e .
 
-```
-pip install -e .
-```
+To get the same for `python setup.py install` run:
 
-To get `python setup.py install` run:
-
-```
-pip install .
-```
+    pip install .
 
 ### Done and done.
 
