@@ -1,7 +1,7 @@
 .hero-unit.content{style: "width:650px; float:left; background: transparent; border: 0px"}
   :each article in articles.slice(0,15)
     .article.page-header{style: "padding-bottom:15px"}
-      %h3{style: "margin-right: 150px"}
+      %h2{style: "margin-right: 150px"}
         %a{style: "color: #404040", href: "/" + article.name}&= article.title
       .date{title: article.date}&= formatDate(article.date, "%A, %B %d, %Y")
       %p
