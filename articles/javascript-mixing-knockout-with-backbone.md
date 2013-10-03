@@ -1,0 +1,1 @@
+TODO: article about knockback, Backbone model for knockout, viewModel for Backbone
