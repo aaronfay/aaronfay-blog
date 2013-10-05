@@ -9,9 +9,7 @@ installed in production, but have extra dependencies installed for development,
 such as test libraries, deploy tools, etc. To get the development dependencies
 with `npm` you run:
 
-```
-$ npm intall --dev
-```
+    $ npm intall --dev
 
 ## how about pip
 It turns out if you are using `pip` 1.2 or newer, you can now do the same thing
@@ -19,55 +17,51 @@ in your `setup.py` file for Python packages.
 
 An example `setup.py` file:
 
-```python
-#!/usr/bin/env python
 
-from setuptools import setup
-from myproject import __version__ 
-
-
-required = [
-    'gevent',
-    'flask',
-    ...
-]
-
-extras = {
-    'develop': [
-        'Fabric',
-        'nose',
+    #!/usr/bin/env python
+    
+    from setuptools import setup
+    from myproject import __version__ 
+    
+    
+    required = [
+        'gevent',
+        'flask',
+        ...
     ]
-}
+    
+    extras = {
+        'develop': [
+            'Fabric',
+            'nose',
+        ]
+    }
+    
+    setup(
+        name="my-project",
+        version=__version__,
+        description="My awsome project.",
+        packages=[
+            "my_project"
+        ],
+        include_package_data=True,
+        zip_safe=False,
+        scripts=[
+            'runmyproject',
+        ],
+        install_requires=required,
+        extras_require=extras,
+    )
+    
 
-setup(
-    name="my-project",
-    version=__version__,
-    description="My awsome project.",
-    packages=[
-        "my_project"
-    ],
-    include_package_data=True,
-    zip_safe=False,
-    scripts=[
-        'runmyproject',
-    ],
-    install_requires=required,
-    extras_require=extras,
-)
-
-```
 
 To install this normally (in "edit" mode) you'd run:
 
-```
-$ pip install -e .
-```
+    $ pip install -e .
 
 To install the `develop` set of dependencies you can run:
 
-```
-$ pip install -e .[develop]
-```
+    $ pip install -e .[develop]
 
 As you can see, you can have multiple sets of extra dependencies and call them
 whatever you want.
