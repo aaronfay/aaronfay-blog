@@ -1,6 +1,7 @@
 Title: dependency sets for pip
 Author: Aaron Fay
 Date: Oct 5 2013
+Categories: python
 
 On of the things I enjoy about building projects with [nodejs](http://nodejs.org/)
 is using [npm](http://npmjs.org), specifically the `devDependencies` part of 
