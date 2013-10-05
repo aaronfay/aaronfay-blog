@@ -3,7 +3,7 @@ Author: Aaron Fay
 Date: Aug 28 2012
 
 <div class="alert-message block-message">
-__Note__: <strong>Zombie.js has had several new releases since I wrote this post.</strong> I've
+<strong>Note: Zombie.js has had several new releases since I wrote this post.</strong> I've
 caved in and tried it again, and the newer version of Zombie seems to be working
 out better than previous versions. Future post to come.
 </div>
