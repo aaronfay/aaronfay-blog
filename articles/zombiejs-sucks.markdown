@@ -2,7 +2,9 @@ Title: Zombie.js just sucks
 Author: Aaron Fay
 Date: Aug 28 2012
 
-__Note__: this is more of a rant than a blog post, take it with salt.
+__Note__: **Zombie.js has had several new releases since I wrote this post.** I've
+caved in and tried it again, and the newer version of Zombie seems to be working
+out better than previous versions. Future post to come.
 
 ## Zombie.js
 
