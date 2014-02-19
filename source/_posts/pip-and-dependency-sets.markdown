@@ -6,7 +6,7 @@ tags:
  - packaging
 ---
 
-On of the things I enjoy about building projects with [nodejs](http://nodejs.org/)
+One of the things I enjoy about building projects with [nodejs](http://nodejs.org/)
 is using [npm](http://npmjs.org), specifically the `devDependencies` part of 
 `package.json`. This allows you to have one set of dependencies that are 
 installed in production, but have extra dependencies installed for development,
