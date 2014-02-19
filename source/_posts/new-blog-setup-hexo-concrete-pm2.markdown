@@ -19,7 +19,7 @@ The setup
  * [node-static][10]: actually serves the site
  * [pm2][11]: kickass process monitor for node, think `supervisor` if you're from python-land but with some neat features.
 
-That's it. Super-simple setup, easy to maintain, updates automatically, and no plugins to get hacked and create spam :)
+That's it. Super-simple setup, easy to maintain, updates automatically, and no plugins to get hacked and create spam :) Hopefully with some new shiny I will make more time to blog about current challenges.
 
 [1]: https://github.com/creationix/wheat
 [2]: http://zespia.tw/hexo/
