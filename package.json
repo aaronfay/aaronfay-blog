@@ -1,23 +1,6 @@
 {
-  "author": "Tim Caswell <tim@creationix.com> (http://creationix.com/)",
-  "name": "howtonode.org",
-  "description": "The popular blog howto.no.de",
-  "version": "0.0.0",
-  "homepage": "http://howto.no.de/",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/creationix/howtonode.org.git"
-  },
-  "engines": {
-    "node": "0.8.x",
-    "npm":  "1.1.x"
-  },
-  "dependencies": {
-    "stack": ">=0.0.3",
-    "creationix": ">=0.1.2",
-    "wheat": ">=0.2.0",
-    "cluster": ">=0.6.4",
-    "express": "~3.0.0"
-  },
-  "devDependencies": {}
+  "name": "hexo",
+  "version": "2.4.5",
+  "private": true,
+  "dependencies": {}
 }
