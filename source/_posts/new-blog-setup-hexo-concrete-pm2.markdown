@@ -1,5 +1,8 @@
 title: Revitalizing the blog with Hexo, Concrete, and PM2
 date: 2014-02-18 22:00:00
+tags: 
+ - ci
+ - nodejs
 ---
 
 Just a super-geeky post. I was using [node-wheat][1] for blogging for a while because it was super-easy to set up, and would just operate off a git repo. Pretty cool, but I never got the time to add some of the features I wanted, and it doesn't appear to be maintained any more, despite it's coolness.
