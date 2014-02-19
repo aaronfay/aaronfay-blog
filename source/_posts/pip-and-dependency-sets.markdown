@@ -1,4 +1,4 @@
-title: dependency sets for pip
+title: Dependency sets for pip
 date: 2013-10-05 12:00:00
 categories: programming
 tags:
