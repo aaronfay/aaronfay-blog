@@ -4,6 +4,7 @@ categories: programming
 tags:
  - python
  - packaging
+ - pip
 ---
 
 One of the things I enjoy about building projects with [nodejs](http://nodejs.org/)
