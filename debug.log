@@ -1,0 +1,174 @@
+date: 2014-02-18 18:46:11.440
+argv: node /Users/aaronfay/sandbox/newblog/hexo server
+os: Darwin 13.0.0 darwin x64
+version:
+  hexo: 2.4.5
+  http_parser: 1.0
+  node: 0.10.25
+  v8: 3.14.5.9
+  ares: 1.9.0-DEV
+  uv: 0.10.23
+  zlib: 1.2.3
+  modules: 11
+  openssl: 1.0.1e
+---
+
+[debug] 00:07:53.692 Configuration file load successfully
+[debug] 00:07:53.694 Version info checked successfully
+[debug] 00:07:53.724 Loading database.
+[debug] 00:07:53.745 Script load successfully: fancybox.js
+[debug] 00:07:53.761 Theme layout loaded
+[debug] 00:07:53.768 Theme configuration loaded
+[debug] 00:07:53.772 Processed: images/test.jpg
+[debug] 00:07:53.782 Theme source loaded
+[debug] 00:07:53.811 Processed: _posts/github-setuptools-awesomeness.markdown
+[debug] 00:07:53.811 Processed: _posts/hello-world.md
+[debug] 00:07:53.816 Cache saved
+[info] 00:07:53.829 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
+[debug] 00:07:56.175 Render index: 
+[debug] 00:08:17.872 Render post: 2014/02/17/hello-world/
+[debug] 00:08:29.383 Render archive: archives/
+[debug] 00:08:31.572 Render index: 
+[debug] 00:08:34.949 Render archive: archives/
+[debug] 00:08:39.404 Render index: 
+[debug] 00:08:59.561 Render index: 
+[delete] 00:09:29.127 Source: _posts/hello-world.md
+[debug] 00:09:29.233 Processed: _posts/hello-world.md
+[debug] 00:09:29.234 Cache saved
+[create] 00:10:12.447 Source: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:10:12.552 Processed: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:10:12.553 Cache saved
+[update] 00:10:45.839 Source: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:10:45.944 Processed: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:10:45.946 Cache saved
+[update] 00:11:07.105 Source: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:11:07.218 Processed: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:11:07.218 Cache saved
+[update] 00:11:56.686 Source: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:11:56.792 Processed: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:11:56.793 Cache saved
+[debug] 00:12:08.097 Render index: 
+[update] 00:12:43.569 Source: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:12:43.678 Processed: _posts/learning-perl-list-scalar-context.markdown
+[debug] 00:12:43.679 Cache saved
+[debug] 00:12:46.317 Render index: 
+[create] 00:13:55.744 Source: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:13:55.849 Processed: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:13:55.850 Cache saved
+[update] 00:14:39.775 Source: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:14:39.881 Processed: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:14:39.883 Cache saved
+[update] 00:15:02.335 Source: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:15:02.439 Processed: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:15:02.440 Cache saved
+[create] 00:15:40.091 Source: images/demo.png
+[create] 00:15:40.091 Source: images/graph.png
+[debug] 00:15:40.195 Processed: images/demo.png
+[debug] 00:15:40.195 Processed: images/graph.png
+[debug] 00:15:40.197 Cache saved
+[delete] 00:16:04.667 Source: images/graph.png
+[create] 00:16:04.668 Source: images/librato-metrics-test-with-nodejs-graph.png
+[debug] 00:16:04.770 Processed: images/graph.png
+[debug] 00:16:04.771 Processed: images/librato-metrics-test-with-nodejs-graph.png
+[debug] 00:16:04.772 Cache saved
+[update] 00:16:21.472 Source: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:16:21.579 Processed: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:16:21.581 Cache saved
+[delete] 00:16:34.058 Source: images/demo.png
+[create] 00:16:34.059 Source: images/librato-metrics-test-with-nodejs-demo.png
+[debug] 00:16:34.160 Processed: images/demo.png
+[debug] 00:16:34.161 Processed: images/librato-metrics-test-with-nodejs-demo.png
+[debug] 00:16:34.162 Cache saved
+[update] 00:16:56.612 Source: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:16:56.729 Processed: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:16:56.730 Cache saved
+[debug] 00:16:59.835 Render index: 
+[update] 00:17:19.924 Source: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:17:20.033 Processed: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:17:20.034 Cache saved
+[debug] 00:17:22.153 Render index: 
+[update] 00:17:30.921 Source: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:17:31.029 Processed: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:17:31.030 Cache saved
+[debug] 00:17:59.893 Render index: 
+[update] 00:18:26.732 Source: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:18:26.841 Processed: _posts/librato-metrics-test-with-nodejs.markdown
+[debug] 00:18:26.842 Cache saved
+[debug] 00:18:28.621 Render index: 
+[create] 08:55:33.699 Source: _posts/on-learning-and-development-aka-developer-rot.markdown
+[debug] 08:55:33.803 Processed: _posts/on-learning-and-development-aka-developer-rot.markdown
+[debug] 08:55:33.804 Cache saved
+[update] 08:55:52.748 Source: _posts/on-learning-and-development-aka-developer-rot.markdown
+[debug] 08:55:52.855 Processed: _posts/on-learning-and-development-aka-developer-rot.markdown
+[debug] 08:55:52.856 Cache saved
+[debug] 08:56:06.268 Render index: 
+[debug] 08:56:22.088 Render index: 
+[debug] 08:56:32.096 Render post: 0005/12/05/on-learning-and-development-aka-developer-rot/
+[create] 08:57:50.416 Source: _posts/on-learning-perl-and-tdd.markdown
+[debug] 08:57:50.521 Processed: _posts/on-learning-perl-and-tdd.markdown
+[debug] 08:57:50.522 Cache saved
+[update] 08:58:00.014 Source: _posts/on-learning-and-development-aka-developer-rot.markdown
+[debug] 08:58:00.119 Processed: _posts/on-learning-and-development-aka-developer-rot.markdown
+[debug] 08:58:00.120 Cache saved
+[update] 08:58:21.986 Source: _posts/on-learning-perl-and-tdd.markdown
+[debug] 08:58:22.090 Processed: _posts/on-learning-perl-and-tdd.markdown
+[debug] 08:58:22.091 Cache saved
+[create] 08:58:31.668 Source: _posts/.sublba0.tmp
+[update] 08:58:31.768 Source: _posts/on-learning-perl-and-tdd.markdown
+[debug] 08:58:31.873 Processed: _posts/on-learning-perl-and-tdd.markdown
+[debug] 08:58:31.873 Cache saved
+[debug] 08:58:34.222 Render index: 
+[delete] 08:59:05.865 Source: _posts/.sublba0.tmp
+[create] 08:59:05.866 Source: _posts/paramiko-pysftp-change-directory.markdown
+[debug] 08:59:05.967 Processed: _posts/.sublba0.tmp
+[debug] 08:59:05.971 Processed: _posts/paramiko-pysftp-change-directory.markdown
+[debug] 08:59:05.976 Cache saved
+[update] 08:59:22.569 Source: _posts/paramiko-pysftp-change-directory.markdown
+[debug] 08:59:22.673 Processed: _posts/paramiko-pysftp-change-directory.markdown
+[debug] 08:59:22.675 Cache saved
+[update] 08:59:53.934 Source: _posts/paramiko-pysftp-change-directory.markdown
+[debug] 08:59:54.043 Processed: _posts/paramiko-pysftp-change-directory.markdown
+[debug] 08:59:54.044 Cache saved
+[debug] 09:00:02.129 Render index: 
+[update] 18:40:46.467 Source: _posts/paramiko-pysftp-change-directory.markdown
+[debug] 18:40:46.668 Processed: _posts/paramiko-pysftp-change-directory.markdown
+[debug] 18:40:46.669 Cache saved
+[debug] 18:40:52.989 Render index: 
+[debug] 18:41:01.643 Render tag: tags/fun/
+[create] 18:42:13.458 Source: _posts/perl-finding-dbi-hostname.markdown
+[debug] 18:42:13.562 Processed: _posts/perl-finding-dbi-hostname.markdown
+[debug] 18:42:13.563 Cache saved
+[update] 18:42:40.572 Source: _posts/perl-finding-dbi-hostname.markdown
+[debug] 18:42:40.676 Processed: _posts/perl-finding-dbi-hostname.markdown
+[debug] 18:42:40.677 Cache saved
+[debug] 18:42:44.679 Render index: 
+[create] 18:43:16.382 Source: _posts/pip-and-dependency-sets.markdown
+[debug] 18:43:16.485 Processed: _posts/pip-and-dependency-sets.markdown
+[debug] 18:43:16.487 Cache saved
+[update] 18:44:03.229 Source: _posts/pip-and-dependency-sets.markdown
+[debug] 18:44:03.333 Processed: _posts/pip-and-dependency-sets.markdown
+[debug] 18:44:03.334 Cache saved
+[update] 18:45:05.617 Source: _posts/pip-and-dependency-sets.markdown
+[debug] 18:45:05.722 Processed: _posts/pip-and-dependency-sets.markdown
+[debug] 18:45:05.723 Cache saved
+[debug] 18:45:07.816 Render index: 
+[update] 18:45:14.885 Source: _posts/pip-and-dependency-sets.markdown
+[debug] 18:45:14.991 Processed: _posts/pip-and-dependency-sets.markdown
+[debug] 18:45:14.992 Cache saved
+[debug] 18:45:18.867 Render index: 
+[update] 18:45:35.353 Source: _posts/pip-and-dependency-sets.markdown
+[debug] 18:45:35.460 Processed: _posts/pip-and-dependency-sets.markdown
+[debug] 18:45:35.461 Cache saved
+[create] 18:46:11.334 Source: _posts/setuptools-pip-custom-python-index.markdown
+[error] 18:46:11.437 { rawMessage: 'Unable to parse.',
+  parsedLine: 5,
+  snippet: 'In modern-day software development for the web I find that we end up trying many different ways to deploy code. While [at work](http://strathcom.com/) we\'re using python as our primary programming language, I\'ve enjoyed the [node.js philosophy][1], especially the practice of [Small Kernels of Functionality][1] and [Loosely Coupled Components][1]. ',
+  parsedFile: null,
+  message: 'Unable to parse.',
+  domain: 
+   { domain: null,
+     _events: { error: [Function] },
+     _maxListeners: 10,
+     members: [],
+     _disposed: true },
+  domainThrown: true }
