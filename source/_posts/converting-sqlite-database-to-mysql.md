@@ -16,13 +16,15 @@ that should just be easy, but in my experience with Django, it never is.
 [Theres's a couple posts][2] on [stackoverflow with various scripts][3] to convert content from sqlite to mysql, but none of
 them lined up the planets just right.
 
-[Then I happened on this page][4] where there's a [python script][5] that is not based on the others. **And it just worked**.
+[Then I happened on this page][4] where there's a [python script][5] by [this guy][6] that is not based on the others. **And it just worked**.
 The script looks like:
 
-[1]: 
-[1]: 
-[1]: 
-[1]: 
+[1]: https://docs.djangoproject.com/en/dev/howto/initial-data/
+[2]: http://stackoverflow.com/questions/18671/quick-easy-way-to-migrate-sqlite3-to-mysql
+[3]: http://stackoverflow.com/questions/1067060/translating-perl-to-python
+[4]: http://www.redmine.org/boards/2/topics/12793?r=24999
+[5]: http://www.redmine.org/attachments/download/6235/sqlite3-to-mysql.py
+[6]: http://www.redmine.org/users/27112
 
 ``` python convert.py
 #! /usr/bin/env python
@@ -71,3 +73,5 @@ if __name__ == "__main__":
 ``` bash
 $ sqlite3 mydb.sqlite .dump | python convert.py > out.sql
 ```
+
+Thank you [Behrang Noroozinia][6] from internet land, you solved a long-standing problem of mine.
