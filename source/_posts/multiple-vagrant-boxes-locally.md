@@ -25,6 +25,6 @@ Probably not the right way, but it works for now.
 
 af
 
-[1]: http://vagrantup.org
+[1]: http://vagrantup.com
 [2]: http://ansible.com
 [3]: http://docs.vagrantup.com/v2/multi-machine/
