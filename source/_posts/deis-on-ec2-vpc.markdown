@@ -9,6 +9,8 @@ tags:
  - vpc
 ---
 
+**Note**: this article deals with Deis as of 0.9.0.
+
 At [work](http://strathcom.ca) we've been looking for a good solution to consolidate our service layer. We have around
 30-40 backing services for our application and web tiers. The problem with the current setup is that they're deployed
 all over the place; some in EC2-land, and some are colocated, and they're in various languages.
@@ -72,8 +74,72 @@ creation was failing (you can find this in your AWS console under the CloudForma
 same availability zone, so I had to tweak [the CloudFormation template](https://github.com/deis/deis/blob/master/contrib/ec2/deis.template#L160)
 under the `Resources:CoreOSServerAutoScale:Properties:AvailabilityZones` key to reflect my AZ (namely `us-west-2b`).
 
-To be continued...
+## The IGW
+Another problem I ran into (that had nothing to do with Deis) was I was deploying to an availability zone that didn't actually have access to the public internet (no gateway/nat). This manifested as an error when trying to `make run` the cluster:
 
+```
+Failed creating job deis-registry.service: 501: All the given peers are not reachable (Tried to connect to each peer twice and failed) [0]
+```
+
+Once I got into the proper availability zone, the problem went away.
+
+## `make run`
+I ran into some more issues when I finally got `make run`-ning...first the "activation" part of it took a *really* long time, like 15 minutes. I finally got this error:
+
+```
+af:deis aaronfay$ make run
+fleetctl --strict-host-key-checking=false submit  registry/systemd/deis-registry.service  logger/systemd/deis-logger.service  cache/systemd/deis-cache.service  database/systemd/deis-database.service
+Starting 1 router(s)...
+Job deis-router.1.service scheduled to 22e48bb9.../10.0.14.17
+Starting Deis! Deis will be functional once all services are reported as running... 
+fleetctl --strict-host-key-checking=false start  registry/systemd/deis-registry.service  logger/systemd/deis-logger.service  cache/systemd/deis-cache.service  database/systemd/deis-database.service
+Job deis-registry.service scheduled to 4cb60f67.../10.0.14.16
+Job deis-logger.service scheduled to 22e48bb9.../10.0.14.17
+Job deis-database.service scheduled to 4cb60f67.../10.0.14.16
+Job deis-cache.service scheduled to bc34904c.../10.0.14.13
+Waiting for deis-registry to start (this can take some time)... 
+Failed initializing SSH client: Timed out while initiating SSH connection
+Status: Failed initializing SSH client: Timed out while initiating SSH connection
+Failed initializing SSH client: Timed out while initiating SSH connection
+One or more services failed! Check which services by running 'make status'
+You can get detailed output with 'fleetctl status deis-servicename.service'
+This usually indicates an error with Deis - please open an issue on GitHub or ask for help in IRC
+```
+
+One of the admins on the IRC channel for `#deis` mentioned that you can `make run` again with no problems, however after several runs I still couldn't get the command to complete free from errors. `make status` pointed out the issue with the controller:
+
+```
+af:deis aaronfay$ make status
+fleetctl --strict-host-key-checking=false list-units
+UNIT                    LOAD    ACTIVE  SUB     DESC            MACHINE
+deis-cache.service      loaded  active  running deis-cache      bc34904c.../10.0.14.13
+deis-controller.service loaded  failed  failed  deis-controller 22e48bb9.../10.0.14.17
+deis-database.service   loaded  active  running deis-database   4cb60f67.../10.0.14.16
+deis-logger.service     loaded  active  running deis-logger     22e48bb9.../10.0.14.17
+deis-registry.service   loaded  active  running deis-registry   4cb60f67.../10.0.14.16
+deis-router.1.service   loaded  active  running deis-router     22e48bb9.../10.0.14.17
+```
+`failed` hey? The same admin on the channel recommended `fleetctl start deis-controller` although I think I'm using an older version of fleetctl (`0.2.0`?) and I had to actually run `fleetctl start deis-controller.service`. That appears to have worked:
+
+```
+af:deis aaronfay$ fleetctl start deis-controller.service
+Job deis-controller.service scheduled to 22e48bb9.../10.0.14.17
+
+af:deis aaronfay$ make status
+fleetctl --strict-host-key-checking=false list-units
+UNIT                    LOAD    ACTIVE  SUB     DESC            MACHINE
+deis-cache.service      loaded  active  running deis-cache      bc34904c.../10.0.14.13
+deis-controller.service loaded  active  running deis-controller 22e48bb9.../10.0.14.17
+deis-database.service   loaded  active  running deis-database   4cb60f67.../10.0.14.16
+deis-logger.service     loaded  active  running deis-logger     22e48bb9.../10.0.14.17
+deis-registry.service   loaded  active  running deis-registry   4cb60f67.../10.0.14.16
+deis-router.1.service   loaded  active  running deis-router     22e48bb9.../10.0.14.17
+```
+
+## So far so goo
+I now have Deis running in the VPC, well, the first bits anyway. I will update with the second part which includes DNS configuration, initializing a cluster, and deploying an app.
+
+Cheers,
 
 
 
