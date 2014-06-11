@@ -136,7 +136,7 @@ deis-registry.service   loaded  active  running deis-registry   4cb60f67.../10.0
 deis-router.1.service   loaded  active  running deis-router     22e48bb9.../10.0.14.17
 ```
 
-## So far so goo
+## So far so good
 I now have Deis running in the VPC, well, the first bits anyway. I will update with the second part which includes DNS configuration, initializing a cluster, and deploying an app.
 
 Cheers,
