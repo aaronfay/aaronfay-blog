@@ -16,6 +16,10 @@ I'm putting this here because I need it every time and I have to go looking on t
 ``` python s3.py
 
 import boto
+import logging
+
+logging.basicConfig(level=DEBUG)
+log = logging.getLogger()
 
 
 s3 = boto.connect_s3()
