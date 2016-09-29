@@ -10,7 +10,7 @@ tags:
 
 In modern-day software development for the web I find that we end up trying many different ways to deploy code. While [at work](http://strathcom.com/) we're using python as our primary programming language, I've enjoyed the [node.js philosophy][1], especially the practice of [Small Kernels of Functionality][1] and [Loosely Coupled Components][1]. 
 
-From [the article][5]\:
+From [the article][5]...
 
  > "...why package two modules together if you can simply break them apart into two kernels of functionality which are codependent?""
 
