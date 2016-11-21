@@ -6,7 +6,7 @@ tags:
  - aws
  - lambda
 ---
-This is more of a "note to self" as much as a blog post, as well as I would
+This is more of a *note to self* as much as a blog post, as well as I would
 like to get blogging again.
 
 ## Lambda integration vs. Lambda-Proxy
