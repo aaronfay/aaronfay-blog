@@ -93,7 +93,7 @@ The response should look something like ([docs][2]):
 }
 ```
 
-Updates mentioned in [the blog][3]. Cheers.
+Updates mentioned in [the AWS blog][3]. Cheers.
 
 [1]: http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-set-up-simple-proxy.html#api-gateway-simple-proxy-for-lambda-input-format
 [2]: http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-set-up-simple-proxy.html#api-gateway-simple-proxy-for-lambda-output-format
