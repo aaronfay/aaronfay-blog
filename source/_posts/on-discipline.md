@@ -35,7 +35,7 @@ Use microservices or don't. Use the monolith or don't. It doesn't really matter.
 
 Did you fail? *Good*. Talk about it, don't blame. I don't know of any organization where success is guaranteed every time. But every organization I know banks all their success on their first implementation and when they fail, blame starts going around. Set yourself up for success by practicing failure.
 
-Discuss, argue, agree, experiment, repeat. This is the only way you're going to find the "magic recipe" that actually works for your organization.
+Discuss, argue, agree, experiment, repeat. Do this with discipline. This is the only way you're going to find the "magic recipe" that actually works for your organization.
 
 [1]: https://dzone.com/articles/microservices-please-dont
 [2]: https://www.wired.com/2015/12/psychology-of-clickbait/
