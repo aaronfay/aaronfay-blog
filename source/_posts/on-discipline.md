@@ -1,8 +1,11 @@
 title: On Discipline
-tags: culture, engineering, programming, failure
+tags:
+ - culture
+ - engineering
+ - programming
+ - failure
 date: 2016-12-13 12:00:00
 ---
-
 I recently had a colleague send me an article entitled
 [Microservices, Please don't][1] in which the author identifies several
 "falacies" that are surrounding the microservices craze. I don't take issue
@@ -56,7 +59,6 @@ practicing failure.
 
 Discuss, argue, agree, experiment, repeat. This is the only way you're going to 
 find the "magic recipe" that actually works for your organization.
-
 
 [1]: https://dzone.com/articles/microservices-please-dont
 [2]: https://www.wired.com/2015/12/psychology-of-clickbait/
