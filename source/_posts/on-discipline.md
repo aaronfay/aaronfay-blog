@@ -6,7 +6,7 @@ tags:
  - failure
 date: 2016-12-13 12:00:00
 ---
-I recently had a colleague send me an article entitled [Microservices, Please don't][1] in which the author identifies several "falacies" that are surrounding the microservices craze. I don't take issue with the topic or even any of the "falacies" the author outlines in [the article][1]. What I do take issue with is the (I assume) intentional mis-titling of the article, which misleads the user into thinking the author is going to present convincing reasons not to use microservices. Instead, the article points out common cultural misconceptions about how microservices will solve all their problems and then vaguely sums up with "[simply understand] the domain you’re working in...".
+I recently had a colleague send me an article entitled [Microservices, Please don't][1] in which the author identifies several "falacies" that are surrounding the microservices craze. I don't take issue with the topic or even any of the "falacies" the author outlines in [the article][1]. What I do take issue with is the (I assume) intentional mis-titling of the article, which misleads the user into thinking the author is going to present convincing reasons not to use microservices. Instead, the article points out common cultural misconceptions about how microservices will solve all their problems and then vaguely sums up with "[before you use microservices, simply understand] the domain you’re working in...".
 
 The article is no better than [click bait][2] really, which I won't bother to rant about as I'm sure others have done so.
 
