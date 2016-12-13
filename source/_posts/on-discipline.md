@@ -21,7 +21,7 @@ My response to my colleage:
 
 ## Discipline
 
-I guess what I really wanted to write about in this post was the topic of *discpline*, or the lack thereof. The article speaks to a lack of discipline more than an engineering problem, just as someone [criticizing the use of PHP [3] is really pointing out their inability to use the language effectively, not because of a lack of features, but because of a lack of discipline. 
+I guess what I really wanted to write about in this post was the topic of *discpline*, or the lack thereof. The article speaks to a lack of discipline more than an engineering problem, just as someone [criticizing the use of PHP] [3] is really pointing out their inability to use the language effectively, not because of a lack of features, but because of a lack of discipline. 
 
 [Same goes for perl][4].
 
