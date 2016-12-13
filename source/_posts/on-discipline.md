@@ -26,8 +26,8 @@ My response to my colleage:
 > any other language. It’s not the tool or pattern that is as important as the 
 > team that is wielding it.
 
-Discipline
----
+## Discipline
+
 I guess what I really wanted to write about in this post was the topic of
 *discpline*, or the lack thereof. The article speaks to a lack of discipline
 more than an engineering problem, just as someone [criticizing the use of PHP][3]
@@ -40,8 +40,8 @@ because of a lack of features, but because of a lack of discipline.
 
 Same goes for microservices.
 
-Final thoughts
----
+## Final thoughts
+
 Use microservices or don't. Use the monolith or don't. It doesn't really matter.
 What does matter is that your team understands the approch they're taking and
 the tools they're using, through debate, experimentation, and
